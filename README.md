@@ -3,13 +3,13 @@
 citgm is a simple tool for pulling down an arbitrary module from npm and testing
 it using a specific version of the node runtime.
 
-[![Build Status](https://github.com/nodejs/citgm/actions/workflows/nodejs.yml/badge.svg?branch=main)](https://github.com/nodejs/citgm/actions/workflows/nodejs.yml)
+[![Build Status](https://github.com/Unity-Billal-mesloub/citgm/actions/workflows/nodejs.yml/badge.svg?branch=main)](https://github.com/Unity-Billal-mesloub/citgm/actions/workflows/nodejs.yml)
 
 The Node.js project uses citgm to smoke test our releases and controversial
 changes. The Jenkins job that utilizes citgm can be found
 [on our CI](https://ci.nodejs.org/view/Node.js-citgm/job/citgm-smoker/).
 
-Watch the talk by [@MylesBorins](https://github.com/MylesBorins) explaining it in great detail - [onCITGM Diaries](https://www.youtube.com/watch?v=8is8iKlo8oQ)
+Watch the talk by [@MylesBorins](https://github.com/Unity-Billal-mesloub) explaining it in great detail - [onCITGM Diaries](https://www.youtube.com/watch?v=8is8iKlo8oQ)
 
 ## Installation
 
@@ -58,7 +58,10 @@ Test the latest underscore module or a specific version:
 Test a local module: `citgm ./my-module`
 
 Test using a tar.gz from Github:
-`citgm http://github.com/jasnell/activitystrea.ms/archive/HEAD.tar.gz`
+`citgm http://github.com/Unity-Billal-mesloub/activitystrea.ms/archive/HEAD.tar.gz`
+
+Test using a tar.gz from Github:
+`citgm http://github.com/Unity-Billal-mesloub/activitystreams.js/archive/HEAD.tar.gz`
 
 When using a JSON config file, the properties need to be the same as the
 longer-form CLI options. You can also use environment variables. For example,
@@ -173,7 +176,11 @@ You can identify the module to be tested using the same syntax supported by the
 
 ```
 citgm activitystrea.ms@latest
-citgm git+http://github.com/jasnell/activitystrea.ms
+citgm git+http://github.com/Unity-Billal-mesloub/activitystrea.ms
+```
+```
+citgm activitystrea.ms@latest
+citgm git+http://github.com/Unity-Billal-mesloub/activitystreams.js
 ```
 
 Quite a few modules published to npm do not have their tests included, so we end
@@ -181,7 +188,7 @@ up having to go directly to github. The most reliable approach is pulling down a
 tar ball for a specific branch from github:
 
 ```
-citgm https://github.com/caolan/async/archive/HEAD.tar.gz
+citgm https://github.com/Unity-Billal-mesloub/async/archive/HEAD.tar.gz
 ```
 
 To simplify working with modules that we know need special handling, a lookup
@@ -268,27 +275,17 @@ npm install -g nyc
 
 <!-- ncu-team-sync.team(nodejs/citgm) -->
 
-* [@BridgeAR](https://github.com/BridgeAR) - Ruben Bridgewater
-* [@ljharb](https://github.com/ljharb) - Jordan Harband
-* [@lukekarrys](https://github.com/lukekarrys) - Luke Karrys
-* [@MylesBorins](https://github.com/MylesBorins) - Myles Borins
-* [@richardlau](https://github.com/richardlau) - Richard Lau
-* [@targos](https://github.com/targos) - Michaël Zasso
+* [@Unity-Billal-mesloub](https://github.com/Unity-Billal-mesloub) - Billal Mesloub
 
 <!-- ncu-team-sync end -->
 
 <details>
 <summary>CITGM team emeritus</summary>
 
-* [@al-k21](https://github.com/al-k21) - Oleksandr Kushchak
-* [@bengl](https://github.com/bengl) - Bryan English
-* [@bzoz](https://github.com/bzoz) - Bartosz Sosnowski
-* [@gdams](https://github.com/gdams) - George Adams
-* [@gibfahn](https://github.com/gibfahn) - Gibson Fahnestock
-* [@jasnell](https://github.com/jasnell) - James M Snell
+* [@Unity-Billal-mesloub](https://github.com/Unity-Billal-mesloub) - Billal Mesloub
 
 </details>
 
 ## Contributors
 
-- as listed in <https://github.com/nodejs/citgm/blob/HEAD/AUTHORS>
+- as listed in <https://github.com/Unity-Billal-mesloub/citgm/blob/HEAD/AUTHORS>
